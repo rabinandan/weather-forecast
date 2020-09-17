@@ -1,0 +1,54 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main {
+    width: "100%";
+}
+
+.main .content {
+    width: "80%";
+    margin: auto;
+    margin-top: 10;
+}
+
+#form{
+    margin: auto;
+    background-color: burlywood;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.forecast {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.forecast .day {
+    position: relative;;
+    border: black;
+    width: 33.333% !important;
+    height: 300px !important;
+
+}
+
+.forecast .day .mark {
+ margin: auto;
+ width: 80%;
+ text-align: center;
+ border: 1px solid black;
+}
+
+.forecast .day .mark .image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#map {
+    width: "100%";
+    background-color: chartreuse;
+    height: 100%;
+  }

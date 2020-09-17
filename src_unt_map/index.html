@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheater Forecast</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0rmL2hE08eDiv_eNgHQPm2WUQTMwmnMQ&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./js/api.js"></script>
+</head>
+<body>
+
+    <!-- <div class="main"> -->
+        <div class="content">
+            <form id="form" onsubmit="event.preventDefault(); validateMyForm();">>
+                <Label>ZIP Code</Label>
+                <input type="text" pattern="[0-9]{6}" title="Six digit zip code" id="zipCode" />
+                <input type="submit" value="Submit">
+            </form>
+            <h2> Chiba, Chiba City, Mihama Ku </h2>
+        </div>
+
+        <div class="content">
+            <h3> 3 days forcast </h3> 
+            <div class="forecast">
+                <div class="day">
+                    <div class="mark">
+                        <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Trulli" class="image">
+                        <h4> day</h4>
+                        <h1>Sunny </h1>
+                        <h4>Max and Min </h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="mark">
+                        <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Trulli" class="image">
+                        <h4> day</h4>
+                        <h1>Sunny </h1>
+                        <h4>Max and Min </h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="mark">
+                        <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Trulli" class="image">
+                        <h4> day</h4>
+                        <h1>Sunny </h1>
+                        <h4>Max and Min </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="content" style="background-color: green;"> -->
+            <div id="map"></div>
+        <!-- </div> -->
+    <!-- </div> -->
+    
+</body>
+</html>
